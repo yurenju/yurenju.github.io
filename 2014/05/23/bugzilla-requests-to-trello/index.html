@@ -6,7 +6,7 @@
   <title>Bugzilla requests to trello | Yuren&#39;s Info Area</title>
   <meta name="author" content="Yuren Ju">
   
-  <meta name="description" content="自從在 Mozilla 工作一陣子後開始會有很多 bugzilla 來的 request，像是 review, needinfo 或是 feedback feedback request 之類的，之前我一直用 bugzilla 上面的 My Dashboard 來管理這件事情，不過後來我發現除了 r">
+  <meta name="description" content="自從在 Mozilla 工作一陣子後開始會有很多 bugzilla 來的 request，像是 review, needinfo 或是 feedback feedback request 之類的，之前我一直用 bugzilla 上面的 My Dashboard 來管理這件事情，不過後來我發現除了 request 以外，Dashboard 並不能幫我管理其他的工作項目，所以我就開始尋找我的 task 管理之路⋯。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -73,8 +73,9 @@
     </header>
     <div class="entry">
       
-        <p>自從在 Mozilla 工作一陣子後開始會有很多 bugzilla 來的 request，像是 review, needinfo 或是 feedback feedback request 之類的，之前我一直用 bugzilla 上面的 My Dashboard 來管理這件事情，不過後來我發現除了 request 以外，Dashboard 並不能幫我管理其他的工作項目，所以我就開始尋找我的 task 管理之路⋯。</p>
-<p>之前雖然就有用過 trello 管理各式各樣的事情（結婚、COSCUP、工作上的事情），不過後來因為他不能自動把 bugzilla request 轉換成 trello card 後就比較少用了，而這次又回頭來想想是不是有辦法用 trello 來管理，仔細想想我只要用 ifttt 把信箱裡面出現 &quot;review requested:&quot; 這個字串的寄到 trello 提供的信箱就收工啦！所以我就開始這樣設定了</p>
+        <p>自從在 Mozilla 工作一陣子後開始會有很多 bugzilla 來的 request，像是 review, needinfo 或是 feedback feedback request 之類的，之前我一直用 bugzilla 上面的 My Dashboard 來管理這件事情，不過後來我發現除了 request 以外，Dashboard 並不能幫我管理其他的工作項目，所以我就開始尋找我的 task 管理之路⋯。
+<a id="more"></a>
+之前雖然就有用過 trello 管理各式各樣的事情（結婚、COSCUP、工作上的事情），不過後來因為他不能自動把 bugzilla request 轉換成 trello card 後就比較少用了，而這次又回頭來想想是不是有辦法用 trello 來管理，仔細想想我只要用 ifttt 把信箱裡面出現 &quot;review requested:&quot; 這個字串的寄到 trello 提供的信箱就收工啦！所以我就開始這樣設定了</p>
 <p>不過首先我第一個遇到的問題是，當你收到出現 &quot;review requested:&quot; 就寄到 trello 提供的信箱會遇到無窮重寄的問題，因為就算你寄了 &quot;review requested:&quot; 的信之後，gmail 的 search query 還是會 filter 到一樣的關鍵字，然後 ifttt 又會重複寄一次，所以每次收到 review request 就會不同的鬼打牆重複寄⋯，還好 ifttt 寄信的時候可以更改信件標題內文，所以我只要加入特殊的字串（像是 #trello）到信件內文，接著過濾條件用減號 -trello 即可。</p>
 <p>首先先到 trello 的側邊欄找出 trello 提供的 email，寄過去就會自動轉成 card：</p>
 <p><img src="http://i.imgur.com/cUNRyr7.png" alt="Trello email"></p>
