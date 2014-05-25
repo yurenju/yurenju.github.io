@@ -1,0 +1,729 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>彙整 | Yuren&#39;s Info Area</title>
+  <meta name="author" content="Yuren Ju">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Yuren&#39;s Info Area"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Yuren&#39;s Info Area" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Yuren&#39;s Info Area</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title">彙整</h2>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-05-23T08:37:13.000Z"><a href="/2014/05/23/bugzilla-requests-to-trello/">5月 23 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/05/23/bugzilla-requests-to-trello/">Bugzilla requests to trello</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>自從在 Mozilla 工作一陣子後開始會有很多 bugzilla 來的 request，像是 review, needinfo 或是 feedback feedback request 之類的，之前我一直用 bugzilla 上面的 My Dashboard 來管理這件事情，不過後來我發現除了 request 以外，Dashboard 並不能幫我管理其他的工作項目，所以我就開始尋找我的 task 管理之路⋯。</p>
+<p>之前雖然就有用過 trello 管理各式各樣的事情（結婚、COSCUP、工作上的事情），不過後來因為他不能自動把 bugzilla request 轉換成 trello card 後就比較少用了，而這次又回頭來想想是不是有辦法用 trello 來管理，仔細想想我只要用 ifttt 把信箱裡面出現 &quot;review requested:&quot; 這個字串的寄到 trello 提供的信箱就收工啦！所以我就開始這樣設定了</p>
+<p>不過首先我第一個遇到的問題是，當你收到出現 &quot;review requested:&quot; 就寄到 trello 提供的信箱會遇到無窮重寄的問題，因為就算你寄了 &quot;review requested:&quot; 的信之後，gmail 的 search query 還是會 filter 到一樣的關鍵字，然後 ifttt 又會重複寄一次，所以每次收到 review request 就會不同的鬼打牆重複寄⋯，還好 ifttt 寄信的時候可以更改信件標題內文，所以我只要加入特殊的字串（像是 #trello）到信件內文，接著過濾條件用減號 -trello 即可。</p>
+<p>首先先到 trello 的側邊欄找出 trello 提供的 email，寄過去就會自動轉成 card：</p>
+<p><img src="http://i.imgur.com/cUNRyr7.png" alt="Trello email"></p>
+<p>接下來就是 ifttt 發揮的時候了，建立一個新的 recipe，並且選擇用 gmail 作為來源，條件是 New email from search，並且用 subject:(review-requested:) -trello 作為過濾條件：</p>
+<p><img src="http://i.imgur.com/4hAgEKe.png" alt="gmail trigger"></p>
+<p>動作則是用 gmail 寄送郵件寄到 trello 提供的 email，並且在內文多加一個 #trello 讓前面的搜尋條件可以排除這封信件，另外我的 trello 有開一個 review 的標簽，所以我還在標題多加了 #review：</p>
+<p><img src="http://i.imgur.com/jgu3q7D.png" alt="Send email to trello"></p>
+<p>這樣就好了，之後 review request 就會自動加到 trello 裡面，而我也可以把自己的工作手動輸入。</p>
+<p><img src="http://i.imgur.com/D8fn0aT.png" alt="trello screenshot"></p>
+<p>另外這邊有另外一個 trello 的 <a href="https://github.com/thedufer/Trello-Bookmarklet-Maker" target="_blank">bookmarklet</a> 也很好用，可以把網頁轉換成 trello card。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-19T12:54:49.000Z"><a href="/2014/04/19/g0v-hackath8n/">4月 19 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/19/g0v-hackath8n/">g0v Hackath8n</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="https://www.flickr.com/photos/yurenju/13911947031" title="g0v Hackath8n by Yuren Ju, on Flickr" target="_blank"><img src="https://farm4.staticflickr.com/3804/13911947031_3a2732df1a_c.jpg" width="800" height="451" alt="g0v Hackath8n"></a></p>
+<p>今天去 g0v 真的是蠻有趣的，原本要幫 Kuang-Che Liu 弄鄉民關心你的聯絡人，不過因為他早上沒來的關係所以我就開始找看看有沒有其他有趣的 project 可以作。聽完大家非常大一輪的介紹後，我決定去找立委投票指南的朋友們看看那邊有沒有什麼需要幫忙的。</p>
+<p>然後今天就幫忙弄了兩個小東西：</p>
+<ol>
+<li>從<a href="http://sunshine.cy.gov.tw/GipOpenWeb/wSite/sp?xdUrl=/wSite/SpecialPublication/baseQuery.jsp" target="_blank">陽光法案主題網</a>把所有立委的財產申報資料全部都爬下來</li>
+<li>指令界面版本的 <strong>臺北市</strong> 地價公告現值查詢</li>
+</ol>
+<p>這兩個是有相關的，因為陽光法案李立委的財產申報資料裡面是有含土地資訊的，所以可以利用這個資訊進一步查詢到公告地價現值。</p>
+<p>第一個爬完的資料已經放到 github 上面了，你可以看到一堆立法委員的<a href="https://github.com/g0v/twly_crawler/tree/master/pdf" target="_blank">公開財產資料</a>（笑）</p>
+<p><img src="http://i.imgur.com/kxKAYJo.png" alt="enter image description here"></p>
+<p>接下來就是可以利用 PDF 裡面的資料進一步了解立委所持有的土地的目前公告現值。這個功能目前還沒 merge，不過 <a href="https://github.com/g0v/twly_crawler/pull/9" target="_blank">pull request 在這</a>如果你有興趣的話。首先你要有 nodejs，接下來用 npm 把相依套件裝一裝～</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="built_in">npm</span> i
+</pre></td></tr></table></figure>
+
+<p>好了，接下來就可以玩了，最近割闌尾的立委很夯，我就隨便挑一個來試試 XDD，我從他的公開財產資料表裡面得到一筆資訊：『臺北市信義區信義段三小段0018-0000』，而指令就是這樣下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>node lq 信義區,信義段三小段,0018-0000
+</pre></td></tr></table></figure>
+
+<p>答案就會出來了：<code>公告現值 (元/平方公尺): 848,000</code>，因為財產資料裡面提到面積為 891 平方公尺，權力範圍為 2287/100000，依照這些資訊我們可以算出該資產目前的現值是多少：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="attribute">848000 * 2287/100000 * 891 </span>=<span class="string"> 17279840.16</span>
+</pre></td></tr></table></figure>
+
+<p>而根據該筆受贈的土地原本價格約為 900 餘萬，所以這筆土地幾乎漲了兩倍，算是很不錯的投資呢～</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-02-07T02:56:50.000Z"><a href="/2014/02/07/bug-of-makefile-in-mingw/">2月 7 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/02/07/bug-of-makefile-in-mingw/">Bug of Makefile in MinGW</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>昨天踩到了一個讓人很沮喪的 bug。</p>
+<p>一般來說在 Makefile 我們可以用 $(shell pwd) 拿到像這樣 style 的路徑</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="variable">$(</span>shell <span class="keyword">pwd</span>)
+/home/yurenju/gaia
+</pre></td></tr></table></figure>
+
+<p>如果要在 Windows 的 MinGW 底下用的話，可以用大寫 W 參數可以拿到這樣 style 的路徑：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="variable">$(</span>shell pwd -<span class="constant">W</span>)
+<span class="constant">C</span><span class="symbol">:/home/yurenju/gaia</span>
+</pre></td></tr></table></figure>
+
+<p>然後昨天踩到的雷是，如果你用 <code>-include</code> 引入了另外一個 Makefile 後（比如說 common.mk），你在 common.mk 裡面執行 <code>$(shell pwd -W)</code> 竟然會出錯！而且同樣的用法如果沒有用 -include 的時候是完全會動的。</p>
+<p>解法呢？感謝 <a href="http://www.postgresql.org/message-id/4D0BF549.6030600@dunslane.net" target="_blank">PostgreSQL</a> 的先烈告訴我們了答案，用 <code>sh -c</code> 去執行竟然就好了</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="variable">$(</span>shell sh -c <span class="string">"pwd -W"</span>)
+</pre></td></tr></table></figure>
+
+<p>見鬼了，這哪招啊...</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-01-19T14:50:55.000Z"><a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/">1月 19 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/">Firefox Addon - No more Facebook redirect</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><img src="http://i.imgur.com/4xM1CTC.jpg" alt="Ad-tech London 2010"></p>
+<p>上週跟同事討論到 Facebook 的重導很慢（然後他也不想讓 Facebook 經手他看的內容），上週末的時候寫了一個簡單的 Firefox Addon，也跟大家分享一下 Firefox Addon 要怎麼開始。</p>
+<p><a href="https://addons.mozilla.org/firefox/addon/flink-removal/" target="_blank">Addon 網址在這</a>。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-01-02T03:37:14.000Z"><a href="/2014/01/02/gaia-build-system/">1月 2 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/01/02/gaia-build-system/">Gaia Build System</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>(這篇部分的資訊我也寫到 <a href="https://developer.mozilla.org/en-US/Firefox_OS/Platform/Gaia/Build_System_Primer#Build_process" target="_blank">MDN</a> 上面去了。）</p>
+<p>Gaia Build System 基本上是由 make, node.js script 跟 xpcshell script 所構成的（以前還有 Python Script 不過已經被消滅了）。前兩個大家都清楚，所以只介紹一下 xpcshell。</p>
+<p>xpcshell 是一個放在 xulrunner 裡面的一個執行環境，它的用處跟 node.js 一樣，可以直接執行 javascript，所以可以拿它來處理一些 build system 要做的一些工作，另外 gaia 的 build system 也有使用 commonjs 的環境，所以基本上使用 xpcshell 跟用 node.js 寫東西差不多，只是可以用的 library 跟 API 不同。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/01/02/gaia-build-system/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-12-22T13:48:39.000Z"><a href="/2013/12/22/2013-review/">12月 22 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/12/22/2013-review/">2013 Review</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>2013 快要結束了，在最後一個月回顧一下今年做過的事情。</p>
+<h2 id="-">旅行</h2>
+<p>今年是非常瘋狂的一年，加入了 Mozilla 的緣故今年有非常多機會可以到國外出差，而今年也自己出去了兩個國家旅行，所以光是今年就造訪了七個國家，出差的有<a href="http://500px.com/yurenju/stories/73275/berlin-work-week" target="_blank">德國柏林</a>、<a href="http://500px.com/yurenju/stories/86663/madrid-work-week" target="_blank">西班牙馬德里</a>、中國上海、<a href="http://500px.com/yurenju/stories/1095874/oslo-work-week" target="_blank">挪威奧斯陸</a>與<a href="http://500px.com/yurenju/stories/3195082/california" target="_blank">美國加州</a>。</p>
+<p>自己則去了<a href="http://500px.com/yurenju/stories/82703/" target="_blank">泰國曼谷</a>跟日本的<a href="http://500px.com/yurenju/stories/84121/" target="_blank">京都</a></p>
+<p>國內旅遊今年比較少，說得出有印象的是去<a href="https://www.facebook.com/yurenju/media_set?set=a.10151824597151631.1073741832.700771630&amp;type=3" target="_blank">台中后里、新社騎腳踏車跟賞花</a>還有到宜蘭釣小管，年初的時候還有去<a href="https://www.facebook.com/yurenju/media_set?set=a.10151347453206631.442296.700771630&amp;type=1" target="_blank">平溪</a>走走。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2013/12/22/2013-review/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-11-27T10:23:07.000Z"><a href="/2013/11/27/css3-selector-not-+-checked-+-preceded/">11月 27 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/11/27/css3-selector-not-+-checked-+-preceded/">CSS3 selector: not + checked + preceded</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>CSS3 的 Selector 其實多了不少功能，以前需要用 javascript 才可以做出來的功能現在有時候只要用 CSS3 selector 就可以了，例如說：你有個 checkbox，如果按下這個 checkbox 後下面的 panel 才要顯示。一般來說我們可以用 javascript 對這個 panel 新增 class 來達到這個效果，不過用 CSS3 就又更簡單了。</p>
+<p>你的 HTML 大概會長這樣：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">"toggle"</span> <span class="attribute">type</span>=<span class="value">"checkbox"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"toggle"</span>&gt;</span>Show Panel<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel"</span>&gt;</span>
+Panel
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>而 CSS 只要這樣寫就可以控制 panel 顯示/隱藏了。下面 CSS 的意思是如果沒有 (:not) 選取 (:checked) 的時候，跟他同層 (~) 的 #panel 元素就隱藏起來。如果是緊鄰的元素也可以用 + 取代 ~。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="id">#toggle</span><span class="pseudo">:not(</span><span class="pseudo">:checked)</span> ~ <span class="id">#panel</span> <span class="rules">{
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;
+<span class="rule">}</span></span>
+</pre></td></tr></table></figure>
+
+<p>你也可以在 jsFiddle 上面玩玩（點下面的 result）。</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/W4BrH/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-11-25T03:46:06.000Z"><a href="/2013/11/25/get-origin-from-a-url/">11月 25 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/11/25/get-origin-from-a-url/">Get origin from an URL</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>假設今天你有這個網址：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="symbol">https:</span>/<span class="regexp">/twitter.com/yurenju</span><span class="regexp">/status/</span><span class="number">402368329135816704</span>
+</pre></td></tr></table></figure>
+
+<p>你要怎麼取得 <code>https://twitter.com</code> 呢？一般來說你可以用 regex 來達成：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">getOrigin</span><span class="params">(url)</span> {</span>
+  <span class="keyword">if</span> (!url) {
+    <span class="keyword">return</span> <span class="literal">null</span>;
+  } <span class="keyword">else</span> {
+    <span class="keyword">var</span> matched = url.match(<span class="regexp">/^([a-zA-Z]+:\/\/.[^/]+).*/</span>);
+    <span class="keyword">return</span> (matched.length &gt; <span class="number">1</span>) ? matched[<span class="number">1</span>] : <span class="literal">null</span>;
+  }
+}
+</pre></td></tr></table></figure>
+
+<p>不過如果你使用 Firefox 最新的 Nightly 就可以用 <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL" target="_blank">URL()</a> 來達到這件事情（Chrome 似乎可以用 webkitURL）。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="keyword">var</span> url = <span class="keyword">new</span> URL(YOUR_URL);
+console.log(url.origin);
+</pre></td></tr></table></figure>
+
+<p>有興趣可以到 jsFiddle 上面用 Nightly 玩玩。</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/6q7W2/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-11-21T04:12:29.000Z"><a href="/2013/11/21/arrayforeach-for-nodelist/">11月 21 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/11/21/arrayforeach-for-nodelist/">Array.forEach for NodeList</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Javascript 裡面有個很實用的功能 forEach，跟其他語言的 for-each 一樣，你可以不需要 index 的狀況把陣列裡面的 object 一個個的丟出來，用法如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>];
+arr.forEach(<span class="function"><span class="keyword">function</span><span class="params">(num)</span> {</span>
+  <span class="comment">// do something...</span>
+});
+</pre></td></tr></table></figure>
+
+<p>但是有個小問題，當你用 <code>document.getElementsByTagName()</code> 或是 <code>document.querySelectorAll()</code> 的時候會回傳 <code>HTMLCollection</code> 或是 <code>NodeList</code>因為不是 Array 的關係所以無法使用 forEach 操作。</p>
+<p>但我已經回不去用 index 做 loop 的方式了！<a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList#Why_can%27t_I_use_forEach_or_map_on_a_NodeList.3F" target="_blank">MDN</a> 上面很貼心地跟你說要如何透過 Array 的 prototype 操作 NodeList 與 HTMLCollection：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="keyword">var</span> elements = document.getElementsByTagName(<span class="string">'a'</span>);
+<span class="built_in">Array</span>.prototype.forEach.call(elements, <span class="function"><span class="keyword">function</span><span class="params">(a)</span> {</span>
+    msg.innerHTML += a.innerHTML + <span class="string">'&lt;br&gt;'</span>;
+});
+</pre></td></tr></table></figure>
+
+<p>你也可以直接在 <a href="http://jsfiddle.net/ezV62/" target="_blank">jsFiddle</a> 上面跑跑看。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-11-20T08:33:57.000Z"><a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/">11月 20 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/">Build Firefox OS (Gaia) development environment</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>開發 Gaia 可以在三種環境裡面開發：實體裝置、b2g desktop (Simulator) 或是 Firefox Nightly browser。我想要介紹的是如何在 Firefox Nightly 開發。</p>
+<p>在作業系統的選擇上，我強烈建議使用 Mac OS 或是 Linux 其中一種。Windows 雖然也可以開發（而且我也經常測試這個平台）不過由於大多數的 Gaia Developer 都沒有使用 Windows，如果有任何問題也是比較不容易被發現並修正的，所以選擇 Mac OS or Linux 可以踩到比較少雷。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:yurenju.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">標籤雲</h3>
+  <div class="entry">
+    <a href="/tags/Addon/" style="font-size: 10.00px;">Addon</a><a href="/tags/Build system/" style="font-size: 10.00px;">Build system</a><a href="/tags/Facebook/" style="font-size: 10.00px;">Facebook</a><a href="/tags/Firefox/" style="font-size: 20.00px;">Firefox</a><a href="/tags/Firefox OS/" style="font-size: 20.00px;">Firefox OS</a><a href="/tags/Gaia/" style="font-size: 20.00px;">Gaia</a><a href="/tags/Javascript/" style="font-size: 10.00px;">Javascript</a><a href="/tags/Make/" style="font-size: 10.00px;">Make</a><a href="/tags/MinGW/" style="font-size: 10.00px;">MinGW</a><a href="/tags/Nightly/" style="font-size: 10.00px;">Nightly</a><a href="/tags/bugzilla/" style="font-size: 10.00px;">bugzilla</a><a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/css3/" style="font-size: 10.00px;">css3</a><a href="/tags/g0v/" style="font-size: 10.00px;">g0v</a><a href="/tags/hackath8n/" style="font-size: 10.00px;">hackath8n</a><a href="/tags/trello/" style="font-size: 10.00px;">trello</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/05/23/bugzilla-requests-to-trello/">Bugzilla requests to trello</a>
+      </li>
+    
+      <li>
+        <a href="/2014/04/19/g0v-hackath8n/">g0v Hackath8n</a>
+      </li>
+    
+      <li>
+        <a href="/2014/02/07/bug-of-makefile-in-mingw/">Bug of Makefile in MinGW</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/">Firefox Addon - No more Facebook redirect</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/02/gaia-build-system/">Gaia Build System</a>
+      </li>
+    
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 Yuren Ju
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>css | Yuren&#39;s Info Area</title>
+  <meta name="author" content="Yuren Ju">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Yuren&#39;s Info Area"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Yuren&#39;s Info Area" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Yuren&#39;s Info Area</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title tag">css</h2>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-11-27T10:23:07.000Z"><a href="/2013/11/27/css3-selector-not-+-checked-+-preceded/">11月 27 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/11/27/css3-selector-not-+-checked-+-preceded/">CSS3 selector: not + checked + preceded</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>CSS3 的 Selector 其實多了不少功能，以前需要用 javascript 才可以做出來的功能現在有時候只要用 CSS3 selector 就可以了，例如說：你有個 checkbox，如果按下這個 checkbox 後下面的 panel 才要顯示。一般來說我們可以用 javascript 對這個 panel 新增 class 來達到這個效果，不過用 CSS3 就又更簡單了。</p>
+<p>你的 HTML 大概會長這樣：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">"toggle"</span> <span class="attribute">type</span>=<span class="value">"checkbox"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"toggle"</span>&gt;</span>Show Panel<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel"</span>&gt;</span>
+Panel
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>而 CSS 只要這樣寫就可以控制 panel 顯示/隱藏了。下面 CSS 的意思是如果沒有 (:not) 選取 (:checked) 的時候，跟他同層 (~) 的 #panel 元素就隱藏起來。如果是緊鄰的元素也可以用 + 取代 ~。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="id">#toggle</span><span class="pseudo">:not(</span><span class="pseudo">:checked)</span> ~ <span class="id">#panel</span> <span class="rules">{
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;
+<span class="rule">}</span></span>
+</pre></td></tr></table></figure>
+
+<p>你也可以在 jsFiddle 上面玩玩（點下面的 result）。</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/W4BrH/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:yurenju.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">標籤雲</h3>
+  <div class="entry">
+    <a href="/tags/Addon/" style="font-size: 10.00px;">Addon</a><a href="/tags/Build system/" style="font-size: 10.00px;">Build system</a><a href="/tags/Facebook/" style="font-size: 10.00px;">Facebook</a><a href="/tags/Firefox/" style="font-size: 20.00px;">Firefox</a><a href="/tags/Firefox OS/" style="font-size: 20.00px;">Firefox OS</a><a href="/tags/Gaia/" style="font-size: 20.00px;">Gaia</a><a href="/tags/Javascript/" style="font-size: 10.00px;">Javascript</a><a href="/tags/Make/" style="font-size: 10.00px;">Make</a><a href="/tags/MinGW/" style="font-size: 10.00px;">MinGW</a><a href="/tags/Nightly/" style="font-size: 10.00px;">Nightly</a><a href="/tags/bugzilla/" style="font-size: 10.00px;">bugzilla</a><a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/css3/" style="font-size: 10.00px;">css3</a><a href="/tags/g0v/" style="font-size: 10.00px;">g0v</a><a href="/tags/hackath8n/" style="font-size: 10.00px;">hackath8n</a><a href="/tags/trello/" style="font-size: 10.00px;">trello</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/05/23/bugzilla-requests-to-trello/">Bugzilla requests to trello</a>
+      </li>
+    
+      <li>
+        <a href="/2014/04/19/g0v-hackath8n/">g0v Hackath8n</a>
+      </li>
+    
+      <li>
+        <a href="/2014/02/07/bug-of-makefile-in-mingw/">Bug of Makefile in MinGW</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/">Firefox Addon - No more Facebook redirect</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/02/gaia-build-system/">Gaia Build System</a>
+      </li>
+    
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 Yuren Ju
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

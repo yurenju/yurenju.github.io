@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>彙整：2014 | Yuren&#39;s Info Area</title>
+  <meta name="author" content="Yuren Ju">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Yuren&#39;s Info Area"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Yuren&#39;s Info Area" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Yuren&#39;s Info Area</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title">2014</h2>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-05-23T08:37:13.000Z"><a href="/2014/05/23/bugzilla-requests-to-trello/">5月 23 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/05/23/bugzilla-requests-to-trello/">Bugzilla requests to trello</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>自從在 Mozilla 工作一陣子後開始會有很多 bugzilla 來的 request，像是 review, needinfo 或是 feedback feedback request 之類的，之前我一直用 bugzilla 上面的 My Dashboard 來管理這件事情，不過後來我發現除了 request 以外，Dashboard 並不能幫我管理其他的工作項目，所以我就開始尋找我的 task 管理之路⋯。</p>
+<p>之前雖然就有用過 trello 管理各式各樣的事情（結婚、COSCUP、工作上的事情），不過後來因為他不能自動把 bugzilla request 轉換成 trello card 後就比較少用了，而這次又回頭來想想是不是有辦法用 trello 來管理，仔細想想我只要用 ifttt 把信箱裡面出現 &quot;review requested:&quot; 這個字串的寄到 trello 提供的信箱就收工啦！所以我就開始這樣設定了</p>
+<p>不過首先我第一個遇到的問題是，當你收到出現 &quot;review requested:&quot; 就寄到 trello 提供的信箱會遇到無窮重寄的問題，因為就算你寄了 &quot;review requested:&quot; 的信之後，gmail 的 search query 還是會 filter 到一樣的關鍵字，然後 ifttt 又會重複寄一次，所以每次收到 review request 就會不同的鬼打牆重複寄⋯，還好 ifttt 寄信的時候可以更改信件標題內文，所以我只要加入特殊的字串（像是 #trello）到信件內文，接著過濾條件用減號 -trello 即可。</p>
+<p>首先先到 trello 的側邊欄找出 trello 提供的 email，寄過去就會自動轉成 card：</p>
+<p><img src="http://i.imgur.com/cUNRyr7.png" alt="Trello email"></p>
+<p>接下來就是 ifttt 發揮的時候了，建立一個新的 recipe，並且選擇用 gmail 作為來源，條件是 New email from search，並且用 subject:(review-requested:) -trello 作為過濾條件：</p>
+<p><img src="http://i.imgur.com/4hAgEKe.png" alt="gmail trigger"></p>
+<p>動作則是用 gmail 寄送郵件寄到 trello 提供的 email，並且在內文多加一個 #trello 讓前面的搜尋條件可以排除這封信件，另外我的 trello 有開一個 review 的標簽，所以我還在標題多加了 #review：</p>
+<p><img src="http://i.imgur.com/jgu3q7D.png" alt="Send email to trello"></p>
+<p>這樣就好了，之後 review request 就會自動加到 trello 裡面，而我也可以把自己的工作手動輸入。</p>
+<p><img src="http://i.imgur.com/D8fn0aT.png" alt="trello screenshot"></p>
+<p>另外這邊有另外一個 trello 的 <a href="https://github.com/thedufer/Trello-Bookmarklet-Maker" target="_blank">bookmarklet</a> 也很好用，可以把網頁轉換成 trello card。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-04-19T12:54:49.000Z"><a href="/2014/04/19/g0v-hackath8n/">4月 19 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/04/19/g0v-hackath8n/">g0v Hackath8n</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><a href="https://www.flickr.com/photos/yurenju/13911947031" title="g0v Hackath8n by Yuren Ju, on Flickr" target="_blank"><img src="https://farm4.staticflickr.com/3804/13911947031_3a2732df1a_c.jpg" width="800" height="451" alt="g0v Hackath8n"></a></p>
+<p>今天去 g0v 真的是蠻有趣的，原本要幫 Kuang-Che Liu 弄鄉民關心你的聯絡人，不過因為他早上沒來的關係所以我就開始找看看有沒有其他有趣的 project 可以作。聽完大家非常大一輪的介紹後，我決定去找立委投票指南的朋友們看看那邊有沒有什麼需要幫忙的。</p>
+<p>然後今天就幫忙弄了兩個小東西：</p>
+<ol>
+<li>從<a href="http://sunshine.cy.gov.tw/GipOpenWeb/wSite/sp?xdUrl=/wSite/SpecialPublication/baseQuery.jsp" target="_blank">陽光法案主題網</a>把所有立委的財產申報資料全部都爬下來</li>
+<li>指令界面版本的 <strong>臺北市</strong> 地價公告現值查詢</li>
+</ol>
+<p>這兩個是有相關的，因為陽光法案李立委的財產申報資料裡面是有含土地資訊的，所以可以利用這個資訊進一步查詢到公告地價現值。</p>
+<p>第一個爬完的資料已經放到 github 上面了，你可以看到一堆立法委員的<a href="https://github.com/g0v/twly_crawler/tree/master/pdf" target="_blank">公開財產資料</a>（笑）</p>
+<p><img src="http://i.imgur.com/kxKAYJo.png" alt="enter image description here"></p>
+<p>接下來就是可以利用 PDF 裡面的資料進一步了解立委所持有的土地的目前公告現值。這個功能目前還沒 merge，不過 <a href="https://github.com/g0v/twly_crawler/pull/9" target="_blank">pull request 在這</a>如果你有興趣的話。首先你要有 nodejs，接下來用 npm 把相依套件裝一裝～</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="built_in">npm</span> i
+</pre></td></tr></table></figure>
+
+<p>好了，接下來就可以玩了，最近割闌尾的立委很夯，我就隨便挑一個來試試 XDD，我從他的公開財產資料表裡面得到一筆資訊：『臺北市信義區信義段三小段0018-0000』，而指令就是這樣下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>node lq 信義區,信義段三小段,0018-0000
+</pre></td></tr></table></figure>
+
+<p>答案就會出來了：<code>公告現值 (元/平方公尺): 848,000</code>，因為財產資料裡面提到面積為 891 平方公尺，權力範圍為 2287/100000，依照這些資訊我們可以算出該資產目前的現值是多少：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="attribute">848000 * 2287/100000 * 891 </span>=<span class="string"> 17279840.16</span>
+</pre></td></tr></table></figure>
+
+<p>而根據該筆受贈的土地原本價格約為 900 餘萬，所以這筆土地幾乎漲了兩倍，算是很不錯的投資呢～</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-02-07T02:56:50.000Z"><a href="/2014/02/07/bug-of-makefile-in-mingw/">2月 7 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/02/07/bug-of-makefile-in-mingw/">Bug of Makefile in MinGW</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>昨天踩到了一個讓人很沮喪的 bug。</p>
+<p>一般來說在 Makefile 我們可以用 $(shell pwd) 拿到像這樣 style 的路徑</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="variable">$(</span>shell <span class="keyword">pwd</span>)
+/home/yurenju/gaia
+</pre></td></tr></table></figure>
+
+<p>如果要在 Windows 的 MinGW 底下用的話，可以用大寫 W 參數可以拿到這樣 style 的路徑：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="variable">$(</span>shell pwd -<span class="constant">W</span>)
+<span class="constant">C</span><span class="symbol">:/home/yurenju/gaia</span>
+</pre></td></tr></table></figure>
+
+<p>然後昨天踩到的雷是，如果你用 <code>-include</code> 引入了另外一個 Makefile 後（比如說 common.mk），你在 common.mk 裡面執行 <code>$(shell pwd -W)</code> 竟然會出錯！而且同樣的用法如果沒有用 -include 的時候是完全會動的。</p>
+<p>解法呢？感謝 <a href="http://www.postgresql.org/message-id/4D0BF549.6030600@dunslane.net" target="_blank">PostgreSQL</a> 的先烈告訴我們了答案，用 <code>sh -c</code> 去執行竟然就好了</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="variable">$(</span>shell sh -c <span class="string">"pwd -W"</span>)
+</pre></td></tr></table></figure>
+
+<p>見鬼了，這哪招啊...</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-01-19T14:50:55.000Z"><a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/">1月 19 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/">Firefox Addon - No more Facebook redirect</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><img src="http://i.imgur.com/4xM1CTC.jpg" alt="Ad-tech London 2010"></p>
+<p>上週跟同事討論到 Facebook 的重導很慢（然後他也不想讓 Facebook 經手他看的內容），上週末的時候寫了一個簡單的 Firefox Addon，也跟大家分享一下 Firefox Addon 要怎麼開始。</p>
+<p><a href="https://addons.mozilla.org/firefox/addon/flink-removal/" target="_blank">Addon 網址在這</a>。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-01-02T03:37:14.000Z"><a href="/2014/01/02/gaia-build-system/">1月 2 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/01/02/gaia-build-system/">Gaia Build System</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>(這篇部分的資訊我也寫到 <a href="https://developer.mozilla.org/en-US/Firefox_OS/Platform/Gaia/Build_System_Primer#Build_process" target="_blank">MDN</a> 上面去了。）</p>
+<p>Gaia Build System 基本上是由 make, node.js script 跟 xpcshell script 所構成的（以前還有 Python Script 不過已經被消滅了）。前兩個大家都清楚，所以只介紹一下 xpcshell。</p>
+<p>xpcshell 是一個放在 xulrunner 裡面的一個執行環境，它的用處跟 node.js 一樣，可以直接執行 javascript，所以可以拿它來處理一些 build system 要做的一些工作，另外 gaia 的 build system 也有使用 commonjs 的環境，所以基本上使用 xpcshell 跟用 node.js 寫東西差不多，只是可以用的 library 跟 API 不同。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/01/02/gaia-build-system/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:yurenju.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">標籤雲</h3>
+  <div class="entry">
+    <a href="/tags/Addon/" style="font-size: 10.00px;">Addon</a><a href="/tags/Build system/" style="font-size: 10.00px;">Build system</a><a href="/tags/Facebook/" style="font-size: 10.00px;">Facebook</a><a href="/tags/Firefox/" style="font-size: 20.00px;">Firefox</a><a href="/tags/Firefox OS/" style="font-size: 20.00px;">Firefox OS</a><a href="/tags/Gaia/" style="font-size: 20.00px;">Gaia</a><a href="/tags/Javascript/" style="font-size: 10.00px;">Javascript</a><a href="/tags/Make/" style="font-size: 10.00px;">Make</a><a href="/tags/MinGW/" style="font-size: 10.00px;">MinGW</a><a href="/tags/Nightly/" style="font-size: 10.00px;">Nightly</a><a href="/tags/bugzilla/" style="font-size: 10.00px;">bugzilla</a><a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/css3/" style="font-size: 10.00px;">css3</a><a href="/tags/g0v/" style="font-size: 10.00px;">g0v</a><a href="/tags/hackath8n/" style="font-size: 10.00px;">hackath8n</a><a href="/tags/trello/" style="font-size: 10.00px;">trello</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/05/23/bugzilla-requests-to-trello/">Bugzilla requests to trello</a>
+      </li>
+    
+      <li>
+        <a href="/2014/04/19/g0v-hackath8n/">g0v Hackath8n</a>
+      </li>
+    
+      <li>
+        <a href="/2014/02/07/bug-of-makefile-in-mingw/">Bug of Makefile in MinGW</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/">Firefox Addon - No more Facebook redirect</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/02/gaia-build-system/">Gaia Build System</a>
+      </li>
+    
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 Yuren Ju
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

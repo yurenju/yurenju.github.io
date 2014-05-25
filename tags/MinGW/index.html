@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>MinGW | Yuren&#39;s Info Area</title>
+  <meta name="author" content="Yuren Ju">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Yuren&#39;s Info Area"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Yuren&#39;s Info Area" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Yuren&#39;s Info Area</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title tag">MinGW</h2>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-02-07T02:56:50.000Z"><a href="/2014/02/07/bug-of-makefile-in-mingw/">2月 7 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/02/07/bug-of-makefile-in-mingw/">Bug of Makefile in MinGW</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>昨天踩到了一個讓人很沮喪的 bug。</p>
+<p>一般來說在 Makefile 我們可以用 $(shell pwd) 拿到像這樣 style 的路徑</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="variable">$(</span>shell <span class="keyword">pwd</span>)
+/home/yurenju/gaia
+</pre></td></tr></table></figure>
+
+<p>如果要在 Windows 的 MinGW 底下用的話，可以用大寫 W 參數可以拿到這樣 style 的路徑：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="variable">$(</span>shell pwd -<span class="constant">W</span>)
+<span class="constant">C</span><span class="symbol">:/home/yurenju/gaia</span>
+</pre></td></tr></table></figure>
+
+<p>然後昨天踩到的雷是，如果你用 <code>-include</code> 引入了另外一個 Makefile 後（比如說 common.mk），你在 common.mk 裡面執行 <code>$(shell pwd -W)</code> 竟然會出錯！而且同樣的用法如果沒有用 -include 的時候是完全會動的。</p>
+<p>解法呢？感謝 <a href="http://www.postgresql.org/message-id/4D0BF549.6030600@dunslane.net" target="_blank">PostgreSQL</a> 的先烈告訴我們了答案，用 <code>sh -c</code> 去執行竟然就好了</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="variable">$(</span>shell sh -c <span class="string">"pwd -W"</span>)
+</pre></td></tr></table></figure>
+
+<p>見鬼了，這哪招啊...</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:yurenju.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">標籤雲</h3>
+  <div class="entry">
+    <a href="/tags/Addon/" style="font-size: 10.00px;">Addon</a><a href="/tags/Build system/" style="font-size: 10.00px;">Build system</a><a href="/tags/Facebook/" style="font-size: 10.00px;">Facebook</a><a href="/tags/Firefox/" style="font-size: 20.00px;">Firefox</a><a href="/tags/Firefox OS/" style="font-size: 20.00px;">Firefox OS</a><a href="/tags/Gaia/" style="font-size: 20.00px;">Gaia</a><a href="/tags/Javascript/" style="font-size: 10.00px;">Javascript</a><a href="/tags/Make/" style="font-size: 10.00px;">Make</a><a href="/tags/MinGW/" style="font-size: 10.00px;">MinGW</a><a href="/tags/Nightly/" style="font-size: 10.00px;">Nightly</a><a href="/tags/bugzilla/" style="font-size: 10.00px;">bugzilla</a><a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/css3/" style="font-size: 10.00px;">css3</a><a href="/tags/g0v/" style="font-size: 10.00px;">g0v</a><a href="/tags/hackath8n/" style="font-size: 10.00px;">hackath8n</a><a href="/tags/trello/" style="font-size: 10.00px;">trello</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/05/23/bugzilla-requests-to-trello/">Bugzilla requests to trello</a>
+      </li>
+    
+      <li>
+        <a href="/2014/04/19/g0v-hackath8n/">g0v Hackath8n</a>
+      </li>
+    
+      <li>
+        <a href="/2014/02/07/bug-of-makefile-in-mingw/">Bug of Makefile in MinGW</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/">Firefox Addon - No more Facebook redirect</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/02/gaia-build-system/">Gaia Build System</a>
+      </li>
+    
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 Yuren Ju
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

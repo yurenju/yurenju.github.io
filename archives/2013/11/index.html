@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>彙整：2013/11 | Yuren&#39;s Info Area</title>
+  <meta name="author" content="Yuren Ju">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Yuren&#39;s Info Area"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Yuren&#39;s Info Area" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Yuren&#39;s Info Area</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title">2013/11</h2>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-11-27T10:23:07.000Z"><a href="/2013/11/27/css3-selector-not-+-checked-+-preceded/">11月 27 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/11/27/css3-selector-not-+-checked-+-preceded/">CSS3 selector: not + checked + preceded</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>CSS3 的 Selector 其實多了不少功能，以前需要用 javascript 才可以做出來的功能現在有時候只要用 CSS3 selector 就可以了，例如說：你有個 checkbox，如果按下這個 checkbox 後下面的 panel 才要顯示。一般來說我們可以用 javascript 對這個 panel 新增 class 來達到這個效果，不過用 CSS3 就又更簡單了。</p>
+<p>你的 HTML 大概會長這樣：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">"toggle"</span> <span class="attribute">type</span>=<span class="value">"checkbox"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"toggle"</span>&gt;</span>Show Panel<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel"</span>&gt;</span>
+Panel
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>而 CSS 只要這樣寫就可以控制 panel 顯示/隱藏了。下面 CSS 的意思是如果沒有 (:not) 選取 (:checked) 的時候，跟他同層 (~) 的 #panel 元素就隱藏起來。如果是緊鄰的元素也可以用 + 取代 ~。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="id">#toggle</span><span class="pseudo">:not(</span><span class="pseudo">:checked)</span> ~ <span class="id">#panel</span> <span class="rules">{
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;
+<span class="rule">}</span></span>
+</pre></td></tr></table></figure>
+
+<p>你也可以在 jsFiddle 上面玩玩（點下面的 result）。</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/W4BrH/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-11-25T03:46:06.000Z"><a href="/2013/11/25/get-origin-from-a-url/">11月 25 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/11/25/get-origin-from-a-url/">Get origin from an URL</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>假設今天你有這個網址：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="symbol">https:</span>/<span class="regexp">/twitter.com/yurenju</span><span class="regexp">/status/</span><span class="number">402368329135816704</span>
+</pre></td></tr></table></figure>
+
+<p>你要怎麼取得 <code>https://twitter.com</code> 呢？一般來說你可以用 regex 來達成：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">getOrigin</span><span class="params">(url)</span> {</span>
+  <span class="keyword">if</span> (!url) {
+    <span class="keyword">return</span> <span class="literal">null</span>;
+  } <span class="keyword">else</span> {
+    <span class="keyword">var</span> matched = url.match(<span class="regexp">/^([a-zA-Z]+:\/\/.[^/]+).*/</span>);
+    <span class="keyword">return</span> (matched.length &gt; <span class="number">1</span>) ? matched[<span class="number">1</span>] : <span class="literal">null</span>;
+  }
+}
+</pre></td></tr></table></figure>
+
+<p>不過如果你使用 Firefox 最新的 Nightly 就可以用 <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL" target="_blank">URL()</a> 來達到這件事情（Chrome 似乎可以用 webkitURL）。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="keyword">var</span> url = <span class="keyword">new</span> URL(YOUR_URL);
+console.log(url.origin);
+</pre></td></tr></table></figure>
+
+<p>有興趣可以到 jsFiddle 上面用 Nightly 玩玩。</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/6q7W2/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-11-21T04:12:29.000Z"><a href="/2013/11/21/arrayforeach-for-nodelist/">11月 21 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/11/21/arrayforeach-for-nodelist/">Array.forEach for NodeList</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Javascript 裡面有個很實用的功能 forEach，跟其他語言的 for-each 一樣，你可以不需要 index 的狀況把陣列裡面的 object 一個個的丟出來，用法如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>];
+arr.forEach(<span class="function"><span class="keyword">function</span><span class="params">(num)</span> {</span>
+  <span class="comment">// do something...</span>
+});
+</pre></td></tr></table></figure>
+
+<p>但是有個小問題，當你用 <code>document.getElementsByTagName()</code> 或是 <code>document.querySelectorAll()</code> 的時候會回傳 <code>HTMLCollection</code> 或是 <code>NodeList</code>因為不是 Array 的關係所以無法使用 forEach 操作。</p>
+<p>但我已經回不去用 index 做 loop 的方式了！<a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList#Why_can%27t_I_use_forEach_or_map_on_a_NodeList.3F" target="_blank">MDN</a> 上面很貼心地跟你說要如何透過 Array 的 prototype 操作 NodeList 與 HTMLCollection：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="keyword">var</span> elements = document.getElementsByTagName(<span class="string">'a'</span>);
+<span class="built_in">Array</span>.prototype.forEach.call(elements, <span class="function"><span class="keyword">function</span><span class="params">(a)</span> {</span>
+    msg.innerHTML += a.innerHTML + <span class="string">'&lt;br&gt;'</span>;
+});
+</pre></td></tr></table></figure>
+
+<p>你也可以直接在 <a href="http://jsfiddle.net/ezV62/" target="_blank">jsFiddle</a> 上面跑跑看。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-11-20T08:33:57.000Z"><a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/">11月 20 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/">Build Firefox OS (Gaia) development environment</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>開發 Gaia 可以在三種環境裡面開發：實體裝置、b2g desktop (Simulator) 或是 Firefox Nightly browser。我想要介紹的是如何在 Firefox Nightly 開發。</p>
+<p>在作業系統的選擇上，我強烈建議使用 Mac OS 或是 Linux 其中一種。Windows 雖然也可以開發（而且我也經常測試這個平台）不過由於大多數的 Gaia Developer 都沒有使用 Windows，如果有任何問題也是比較不容易被發現並修正的，所以選擇 Mac OS or Linux 可以踩到比較少雷。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:yurenju.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">標籤雲</h3>
+  <div class="entry">
+    <a href="/tags/Addon/" style="font-size: 10.00px;">Addon</a><a href="/tags/Build system/" style="font-size: 10.00px;">Build system</a><a href="/tags/Facebook/" style="font-size: 10.00px;">Facebook</a><a href="/tags/Firefox/" style="font-size: 20.00px;">Firefox</a><a href="/tags/Firefox OS/" style="font-size: 20.00px;">Firefox OS</a><a href="/tags/Gaia/" style="font-size: 20.00px;">Gaia</a><a href="/tags/Javascript/" style="font-size: 10.00px;">Javascript</a><a href="/tags/Make/" style="font-size: 10.00px;">Make</a><a href="/tags/MinGW/" style="font-size: 10.00px;">MinGW</a><a href="/tags/Nightly/" style="font-size: 10.00px;">Nightly</a><a href="/tags/bugzilla/" style="font-size: 10.00px;">bugzilla</a><a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/css3/" style="font-size: 10.00px;">css3</a><a href="/tags/g0v/" style="font-size: 10.00px;">g0v</a><a href="/tags/hackath8n/" style="font-size: 10.00px;">hackath8n</a><a href="/tags/trello/" style="font-size: 10.00px;">trello</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/05/23/bugzilla-requests-to-trello/">Bugzilla requests to trello</a>
+      </li>
+    
+      <li>
+        <a href="/2014/04/19/g0v-hackath8n/">g0v Hackath8n</a>
+      </li>
+    
+      <li>
+        <a href="/2014/02/07/bug-of-makefile-in-mingw/">Bug of Makefile in MinGW</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/">Firefox Addon - No more Facebook redirect</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/02/gaia-build-system/">Gaia Build System</a>
+      </li>
+    
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 Yuren Ju
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
