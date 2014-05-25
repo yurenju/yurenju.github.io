@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[Yuren's Info Area]]></title>
-  <link href="http://yurenju.github.io/atom.xml" rel="self"/>
-  <link href="http://yurenju.github.io"/>
-  <updated>2014-05-25T10:36:59.891Z</updated>
-  <id>http://yurenju.github.io/</id>
+  <link href="http://blog.yurenju.info/atom.xml" rel="self"/>
+  <link href="http://blog.yurenju.info"/>
+  <updated>2014-05-25T15:33:11.686Z</updated>
+  <id>http://blog.yurenju.info/</id>
   <author>
     <name><![CDATA[Yuren Ju]]></name>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
     <title type="html"><![CDATA[Bugzilla requests to trello]]></title>
-    <link href="http://yurenju.github.io/2014/05/23/bugzilla-requests-to-trello/"/>
-    <id>http://yurenju.github.io/2014/05/23/bugzilla-requests-to-trello/</id>
+    <link href="http://blog.yurenju.info/2014/05/23/bugzilla-requests-to-trello/"/>
+    <id>http://blog.yurenju.info/2014/05/23/bugzilla-requests-to-trello/</id>
     <published>2014-05-23T08:37:13.000Z</published>
     <updated>2014-05-25T10:36:43.000Z</updated>
     <content type="html"><![CDATA[<p>自從在 Mozilla 工作一陣子後開始會有很多 bugzilla 來的 request，像是 review, needinfo 或是 feedback feedback request 之類的，之前我一直用 bugzilla 上面的 My Dashboard 來管理這件事情，不過後來我發現除了 request 以外，Dashboard 並不能幫我管理其他的工作項目，所以我就開始尋找我的 task 管理之路⋯。</p>
@@ -30,13 +30,13 @@
 <p><img src="http://i.imgur.com/D8fn0aT.png" alt="trello screenshot"></p>
 <p>另外這邊有另外一個 trello 的 <a href="https://github.com/thedufer/Trello-Bookmarklet-Maker" target="_blank">bookmarklet</a> 也很好用，可以把網頁轉換成 trello card。</p>
 ]]></content>
-    <category scheme="http://yurenju.github.io/tags/bugzilla/" term="bugzilla"/>
-    <category scheme="http://yurenju.github.io/tags/trello/" term="trello"/>
+    <category scheme="http://blog.yurenju.info/tags/bugzilla/" term="bugzilla"/>
+    <category scheme="http://blog.yurenju.info/tags/trello/" term="trello"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[g0v Hackath8n]]></title>
-    <link href="http://yurenju.github.io/2014/04/19/g0v-hackath8n/"/>
-    <id>http://yurenju.github.io/2014/04/19/g0v-hackath8n/</id>
+    <link href="http://blog.yurenju.info/2014/04/19/g0v-hackath8n/"/>
+    <id>http://blog.yurenju.info/2014/04/19/g0v-hackath8n/</id>
     <published>2014-04-19T12:54:49.000Z</published>
     <updated>2014-04-19T13:30:26.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://www.flickr.com/photos/yurenju/13911947031" title="g0v Hackath8n by Yuren Ju, on Flickr" target="_blank"><img src="https://farm4.staticflickr.com/3804/13911947031_3a2732df1a_c.jpg" width="800" height="451" alt="g0v Hackath8n"></a></p>
@@ -66,13 +66,13 @@
 
 <p>而根據該筆受贈的土地原本價格約為 900 餘萬，所以這筆土地幾乎漲了兩倍，算是很不錯的投資呢～</p>
 ]]></content>
-    <category scheme="http://yurenju.github.io/tags/g0v/" term="g0v"/>
-    <category scheme="http://yurenju.github.io/tags/hackath8n/" term="hackath8n"/>
+    <category scheme="http://blog.yurenju.info/tags/g0v/" term="g0v"/>
+    <category scheme="http://blog.yurenju.info/tags/hackath8n/" term="hackath8n"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Bug of Makefile in MinGW]]></title>
-    <link href="http://yurenju.github.io/2014/02/07/bug-of-makefile-in-mingw/"/>
-    <id>http://yurenju.github.io/2014/02/07/bug-of-makefile-in-mingw/</id>
+    <link href="http://blog.yurenju.info/2014/02/07/bug-of-makefile-in-mingw/"/>
+    <id>http://blog.yurenju.info/2014/02/07/bug-of-makefile-in-mingw/</id>
     <published>2014-02-07T02:56:50.000Z</published>
     <updated>2014-02-07T03:04:58.000Z</updated>
     <content type="html"><![CDATA[<p>昨天踩到了一個讓人很沮喪的 bug。</p>
@@ -98,13 +98,13 @@
 
 <p>見鬼了，這哪招啊...</p>
 ]]></content>
-    <category scheme="http://yurenju.github.io/tags/MinGW/" term="MinGW"/>
-    <category scheme="http://yurenju.github.io/tags/Make/" term="Make"/>
+    <category scheme="http://blog.yurenju.info/tags/MinGW/" term="MinGW"/>
+    <category scheme="http://blog.yurenju.info/tags/Make/" term="Make"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Firefox Addon - No more Facebook redirect]]></title>
-    <link href="http://yurenju.github.io/2014/01/19/firefox-addon---no-more-facebook-redirect/"/>
-    <id>http://yurenju.github.io/2014/01/19/firefox-addon---no-more-facebook-redirect/</id>
+    <link href="http://blog.yurenju.info/2014/01/19/firefox-addon---no-more-facebook-redirect/"/>
+    <id>http://blog.yurenju.info/2014/01/19/firefox-addon---no-more-facebook-redirect/</id>
     <published>2014-01-19T14:50:55.000Z</published>
     <updated>2014-01-19T16:10:14.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://i.imgur.com/4xM1CTC.jpg" alt="Ad-tech London 2010"></p>
@@ -188,14 +188,14 @@ observer.observe(document, {
 <p><code>*=</code> 真是好物啊，大家可以讀一下 <a href="http://www.w3schools.com/cssref/sel_attr_contain.asp" target="_blank">w3schools</a> 上面的說明，可以讓你選取屬性包含特定字串的 element。選取到之後要做的事情就簡單啦，用 Regular Expression 把 <code>u</code> 拿出來，再透過 <code>decodeURIComponent()</code> 把 uri encode 的字串解回來，放到 href，最後移除掉 onclick 就收工了！</p>
 <p>最後 source code 放在 <a href="https://github.com/yurenju/nomore-fb-redirect" target="_blank">github</a> 上面，有興趣的就載來看看吧。</p>
 ]]></content>
-    <category scheme="http://yurenju.github.io/tags/Firefox/" term="Firefox"/>
-    <category scheme="http://yurenju.github.io/tags/Addon/" term="Addon"/>
-    <category scheme="http://yurenju.github.io/tags/Facebook/" term="Facebook"/>
+    <category scheme="http://blog.yurenju.info/tags/Firefox/" term="Firefox"/>
+    <category scheme="http://blog.yurenju.info/tags/Addon/" term="Addon"/>
+    <category scheme="http://blog.yurenju.info/tags/Facebook/" term="Facebook"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Gaia Build System]]></title>
-    <link href="http://yurenju.github.io/2014/01/02/gaia-build-system/"/>
-    <id>http://yurenju.github.io/2014/01/02/gaia-build-system/</id>
+    <link href="http://blog.yurenju.info/2014/01/02/gaia-build-system/"/>
+    <id>http://blog.yurenju.info/2014/01/02/gaia-build-system/</id>
     <published>2014-01-02T03:37:14.000Z</published>
     <updated>2014-01-02T06:39:27.000Z</updated>
     <content type="html"><![CDATA[<p>(這篇部分的資訊我也寫到 <a href="https://developer.mozilla.org/en-US/Firefox_OS/Platform/Gaia/Build_System_Primer#Build_process" target="_blank">MDN</a> 上面去了。）</p>
@@ -282,14 +282,14 @@ observer.observe(document, {
 </dl>
 
 ]]></content>
-    <category scheme="http://yurenju.github.io/tags/Firefox OS/" term="Firefox OS"/>
-    <category scheme="http://yurenju.github.io/tags/Gaia/" term="Gaia"/>
-    <category scheme="http://yurenju.github.io/tags/Build system/" term="Build system"/>
+    <category scheme="http://blog.yurenju.info/tags/Firefox OS/" term="Firefox OS"/>
+    <category scheme="http://blog.yurenju.info/tags/Gaia/" term="Gaia"/>
+    <category scheme="http://blog.yurenju.info/tags/Build system/" term="Build system"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[2013 Review]]></title>
-    <link href="http://yurenju.github.io/2013/12/22/2013-review/"/>
-    <id>http://yurenju.github.io/2013/12/22/2013-review/</id>
+    <link href="http://blog.yurenju.info/2013/12/22/2013-review/"/>
+    <id>http://blog.yurenju.info/2013/12/22/2013-review/</id>
     <published>2013-12-22T13:48:39.000Z</published>
     <updated>2013-12-22T15:57:46.000Z</updated>
     <content type="html"><![CDATA[<p>2013 快要結束了，在最後一個月回顧一下今年做過的事情。</p>
@@ -334,8 +334,8 @@ observer.observe(document, {
   </entry>
   <entry>
     <title type="html"><![CDATA[CSS3 selector: not + checked + preceded]]></title>
-    <link href="http://yurenju.github.io/2013/11/27/css3-selector-not-+-checked-+-preceded/"/>
-    <id>http://yurenju.github.io/2013/11/27/css3-selector-not-+-checked-+-preceded/</id>
+    <link href="http://blog.yurenju.info/2013/11/27/css3-selector-not-+-checked-+-preceded/"/>
+    <id>http://blog.yurenju.info/2013/11/27/css3-selector-not-+-checked-+-preceded/</id>
     <published>2013-11-27T10:23:07.000Z</published>
     <updated>2013-11-27T10:36:46.000Z</updated>
     <content type="html"><![CDATA[<p>CSS3 的 Selector 其實多了不少功能，以前需要用 javascript 才可以做出來的功能現在有時候只要用 CSS3 selector 就可以了，例如說：你有個 checkbox，如果按下這個 checkbox 後下面的 panel 才要顯示。一般來說我們可以用 javascript 對這個 panel 新增 class 來達到這個效果，不過用 CSS3 就又更簡單了。</p>
@@ -364,13 +364,13 @@ Panel
 <p>你也可以在 jsFiddle 上面玩玩（點下面的 result）。</p>
 <iframe width="100%" height="300" src="http://jsfiddle.net/W4BrH/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
 ]]></content>
-    <category scheme="http://yurenju.github.io/tags/css/" term="css"/>
-    <category scheme="http://yurenju.github.io/tags/css3/" term="css3"/>
+    <category scheme="http://blog.yurenju.info/tags/css/" term="css"/>
+    <category scheme="http://blog.yurenju.info/tags/css3/" term="css3"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Get origin from an URL]]></title>
-    <link href="http://yurenju.github.io/2013/11/25/get-origin-from-a-url/"/>
-    <id>http://yurenju.github.io/2013/11/25/get-origin-from-a-url/</id>
+    <link href="http://blog.yurenju.info/2013/11/25/get-origin-from-a-url/"/>
+    <id>http://blog.yurenju.info/2013/11/25/get-origin-from-a-url/</id>
     <published>2013-11-25T03:46:06.000Z</published>
     <updated>2013-11-25T06:36:30.000Z</updated>
     <content type="html"><![CDATA[<p>假設今天你有這個網址：</p>
@@ -407,13 +407,13 @@ console.log(url.origin);
 <p>有興趣可以到 jsFiddle 上面用 Nightly 玩玩。</p>
 <iframe width="100%" height="300" src="http://jsfiddle.net/6q7W2/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
 ]]></content>
-    <category scheme="http://yurenju.github.io/tags/Firefox/" term="Firefox"/>
-    <category scheme="http://yurenju.github.io/tags/Nightly/" term="Nightly"/>
+    <category scheme="http://blog.yurenju.info/tags/Firefox/" term="Firefox"/>
+    <category scheme="http://blog.yurenju.info/tags/Nightly/" term="Nightly"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Array.forEach for NodeList]]></title>
-    <link href="http://yurenju.github.io/2013/11/21/arrayforeach-for-nodelist/"/>
-    <id>http://yurenju.github.io/2013/11/21/arrayforeach-for-nodelist/</id>
+    <link href="http://blog.yurenju.info/2013/11/21/arrayforeach-for-nodelist/"/>
+    <id>http://blog.yurenju.info/2013/11/21/arrayforeach-for-nodelist/</id>
     <published>2013-11-21T04:12:29.000Z</published>
     <updated>2013-11-23T15:50:38.000Z</updated>
     <content type="html"><![CDATA[<p>Javascript 裡面有個很實用的功能 forEach，跟其他語言的 for-each 一樣，你可以不需要 index 的狀況把陣列裡面的 object 一個個的丟出來，用法如下：</p>
@@ -441,12 +441,12 @@ arr.forEach(<span class="function"><span class="keyword">function</span><span cl
 
 <p>你也可以直接在 <a href="http://jsfiddle.net/ezV62/" target="_blank">jsFiddle</a> 上面跑跑看。</p>
 ]]></content>
-    <category scheme="http://yurenju.github.io/tags/Javascript/" term="Javascript"/>
+    <category scheme="http://blog.yurenju.info/tags/Javascript/" term="Javascript"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Build Firefox OS (Gaia) development environment]]></title>
-    <link href="http://yurenju.github.io/2013/11/20/build-firefox-os-(gaia)-development-environment/"/>
-    <id>http://yurenju.github.io/2013/11/20/build-firefox-os-(gaia)-development-environment/</id>
+    <link href="http://blog.yurenju.info/2013/11/20/build-firefox-os-(gaia)-development-environment/"/>
+    <id>http://blog.yurenju.info/2013/11/20/build-firefox-os-(gaia)-development-environment/</id>
     <published>2013-11-20T08:33:57.000Z</published>
     <updated>2013-11-23T15:50:38.000Z</updated>
     <content type="html"><![CDATA[<p>開發 Gaia 可以在三種環境裡面開發：實體裝置、b2g desktop (Simulator) 或是 Firefox Nightly browser。我想要介紹的是如何在 Firefox Nightly 開發。</p>
@@ -474,7 +474,7 @@ origin  git@github.com:&lt;USERNAME&gt;/gaia.git (push)
 <pre><code>$ nightly -profile ABSOLUTE_GAIA_PROFILE_PATH
 </code></pre><p><img src="http://i.imgur.com/kKucvG6.png" alt="Running Gaia on Nightly"></p>
 ]]></content>
-    <category scheme="http://yurenju.github.io/tags/Firefox OS/" term="Firefox OS"/>
-    <category scheme="http://yurenju.github.io/tags/Gaia/" term="Gaia"/>
+    <category scheme="http://blog.yurenju.info/tags/Firefox OS/" term="Firefox OS"/>
+    <category scheme="http://blog.yurenju.info/tags/Gaia/" term="Gaia"/>
   </entry>
 </feed>
