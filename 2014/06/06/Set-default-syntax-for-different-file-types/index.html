@@ -3,13 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Gaia | Yuren&#39;s Info Area</title>
+  <title>Set default syntax for different file types in sublime text | Yuren&#39;s Info Area</title>
   <meta name="author" content="Yuren Ju">
+  
+  <meta name="description" content="用 sublime text 一直有個小問題，就是我有個檔案是 .mk 副檔名，不過 Sublime 一直都沒辦法正確辨識他的 syntax 該用 Makefile，所以每次我都要手動切換。爬了爬文發現在有篇 Stack Overflow 下面的 comment 寫出了一個很簡單的解法。
+首先打開你">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="Set default syntax for different file types in sublime text"/>
   <meta property="og:site_name" content="Yuren&#39;s Info Area"/>
 
   
@@ -43,12 +46,7 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title tag">Gaia</h2>
-
-
-  
-    <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
     <div class="gallery">
   <div class="photoset">
@@ -66,30 +64,56 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-01-02T03:37:14.000Z"><a href="/2014/01/02/gaia-build-system/">1月 2 2014</a></time>
+        <time datetime="2014-06-06T02:55:48.000Z"><a href="/2014/06/06/Set-default-syntax-for-different-file-types/">6月 6 2014</a></time>
       
       
   
-    <h1 class="title"><a href="/2014/01/02/gaia-build-system/">Gaia Build System</a></h1>
+    <h1 class="title">Set default syntax for different file types in sublime text</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>(這篇部分的資訊我也寫到 <a href="https://developer.mozilla.org/en-US/Firefox_OS/Platform/Gaia/Build_System_Primer#Build_process" target="_blank">MDN</a> 上面去了。）</p>
-<p>Gaia Build System 基本上是由 make, node.js script 跟 xpcshell script 所構成的（以前還有 Python Script 不過已經被消滅了）。前兩個大家都清楚，所以只介紹一下 xpcshell。</p>
-<p>xpcshell 是一個放在 xulrunner 裡面的一個執行環境，它的用處跟 node.js 一樣，可以直接執行 javascript，所以可以拿它來處理一些 build system 要做的一些工作，另外 gaia 的 build system 也有使用 commonjs 的環境，所以基本上使用 xpcshell 跟用 node.js 寫東西差不多，只是可以用的 library 跟 API 不同。</p>
+        <p>用 sublime text 一直有個小問題，就是我有個檔案是 .mk 副檔名，不過 Sublime 一直都沒辦法正確辨識他的 syntax 該用 Makefile，所以每次我都要手動切換。爬了爬文發現在有篇 Stack Overflow 下面的 <a href="http://stackoverflow.com/questions/7574502/set-default-syntax-to-different-filetype-in-sublime-text-2#comment24797511_7588849" target="_blank">comment</a> 寫出了一個很簡單的解法。</p>
+<p>首先打開你要設定的檔案，比如說我的例子是 common.mk，打開後先選擇你要指定的 syntax highlight，這個例子就是 Makefile Syntax。</p>
+<p>指定完成後，到 Preferences-&gt; Settings - More -&gt; Syntax Specific - User，他會幫你建立一個新檔案在正確的位置還有正確的檔名，只要用以下的格式設定就可以增加新的副檔名了。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre>{
+  "<span class="attribute">extensions</span>": <span class="value">[ <span class="string">"mk"</span> ]
+</span>}
+</pre></td></tr></table></figure>
+
+<p>重起 Sublime Text 之後就會用正確的 syntax highlight 顯示檔案囉。</p>
 
       
     </div>
     <footer>
       
         
-          <div class="alignleft">
-            <a href="/2014/01/02/gaia-build-system/#more" class="more-link">Read More</a>
-          </div>
         
+  
+  <div class="tags">
+    <a href="/tags/sublime text/">sublime text</a>
+  </div>
+
         
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
       
       <div class="clearfix"></div>
     </footer>
@@ -97,62 +121,25 @@
 </article>
 
 
-  
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-11-20T08:33:57.000Z"><a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/">11月 20 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/">Build Firefox OS (Gaia) development environment</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>開發 Gaia 可以在三種環境裡面開發：實體裝置、b2g desktop (Simulator) 或是 Firefox Nightly browser。我想要介紹的是如何在 Firefox Nightly 開發。</p>
-<p>在作業系統的選擇上，我強烈建議使用 Mac OS 或是 Linux 其中一種。Windows 雖然也可以開發（而且我也經常測試這個平台）不過由於大多數的 Gaia Developer 都沒有使用 Windows，如果有任何問題也是比較不容易被發現並修正的，所以選擇 Mac OS or Linux 可以踩到比較少雷。</p>
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
+<section id="comment">
+  <h1 class="title">留言</h1>
 
   
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=566574640079320";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
-  <nav id="pagination">
+<div class="fb-comments" data-href="http://blog.yurenju.info/2014/06/06/Set-default-syntax-for-different-file-types/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
   
-  
-  <div class="clearfix"></div>
-</nav>
+</section>
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">

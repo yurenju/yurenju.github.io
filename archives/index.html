@@ -66,6 +66,61 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2014-06-06T02:55:48.000Z"><a href="/2014/06/06/Set-default-syntax-for-different-file-types/">6月 6 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/06/06/Set-default-syntax-for-different-file-types/">Set default syntax for different file types in sublime text</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>用 sublime text 一直有個小問題，就是我有個檔案是 .mk 副檔名，不過 Sublime 一直都沒辦法正確辨識他的 syntax 該用 Makefile，所以每次我都要手動切換。爬了爬文發現在有篇 Stack Overflow 下面的 <a href="http://stackoverflow.com/questions/7574502/set-default-syntax-to-different-filetype-in-sublime-text-2#comment24797511_7588849" target="_blank">comment</a> 寫出了一個很簡單的解法。</p>
+<p>首先打開你要設定的檔案，比如說我的例子是 common.mk，打開後先選擇你要指定的 syntax highlight，這個例子就是 Makefile Syntax。</p>
+<p>指定完成後，到 Preferences-&gt; Settings - More -&gt; Syntax Specific - User，他會幫你建立一個新檔案在正確的位置還有正確的檔名，只要用以下的格式設定就可以增加新的副檔名了。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre>{
+  "<span class="attribute">extensions</span>": <span class="value">[ <span class="string">"mk"</span> ]
+</span>}
+</pre></td></tr></table></figure>
+
+<p>重起 Sublime Text 之後就會用正確的 syntax highlight 顯示檔案囉。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2014-05-23T08:37:13.000Z"><a href="/2014/05/23/bugzilla-requests-to-trello/">5月 23 2014</a></time>
       
       
@@ -593,58 +648,11 @@ arr.forEach(<span class="function"><span class="keyword">function</span><span cl
 
 
   
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-11-20T08:33:57.000Z"><a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/">11月 20 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/">Build Firefox OS (Gaia) development environment</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>開發 Gaia 可以在三種環境裡面開發：實體裝置、b2g desktop (Simulator) 或是 Firefox Nightly browser。我想要介紹的是如何在 Firefox Nightly 開發。</p>
-<p>在作業系統的選擇上，我強烈建議使用 Mac OS 或是 Linux 其中一種。Windows 雖然也可以開發（而且我也經常測試這個平台）不過由於大多數的 Gaia Developer 都沒有使用 Windows，如果有任何問題也是比較不容易被發現並修正的，所以選擇 Mac OS or Linux 可以踩到比較少雷。</p>
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2013/11/20/build-firefox-os-(gaia)-development-environment/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-  
 
   <nav id="pagination">
   
+  
+    <a href="/archives/page/2/" class="alignright next">下一頁</a>
   
   <div class="clearfix"></div>
 </nav>
@@ -661,7 +669,7 @@ arr.forEach(<span class="function"><span class="keyword">function</span><span cl
 <div class="widget tagcloud">
   <h3 class="title">標籤雲</h3>
   <div class="entry">
-    <a href="/tags/Addon/" style="font-size: 10.00px;">Addon</a><a href="/tags/Build system/" style="font-size: 10.00px;">Build system</a><a href="/tags/Facebook/" style="font-size: 10.00px;">Facebook</a><a href="/tags/Firefox/" style="font-size: 20.00px;">Firefox</a><a href="/tags/Firefox OS/" style="font-size: 20.00px;">Firefox OS</a><a href="/tags/Gaia/" style="font-size: 20.00px;">Gaia</a><a href="/tags/Javascript/" style="font-size: 10.00px;">Javascript</a><a href="/tags/Make/" style="font-size: 10.00px;">Make</a><a href="/tags/MinGW/" style="font-size: 10.00px;">MinGW</a><a href="/tags/Nightly/" style="font-size: 10.00px;">Nightly</a><a href="/tags/bugzilla/" style="font-size: 10.00px;">bugzilla</a><a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/css3/" style="font-size: 10.00px;">css3</a><a href="/tags/g0v/" style="font-size: 10.00px;">g0v</a><a href="/tags/hackath8n/" style="font-size: 10.00px;">hackath8n</a><a href="/tags/trello/" style="font-size: 10.00px;">trello</a>
+    <a href="/tags/Addon/" style="font-size: 10.00px;">Addon</a><a href="/tags/Build system/" style="font-size: 10.00px;">Build system</a><a href="/tags/Facebook/" style="font-size: 10.00px;">Facebook</a><a href="/tags/Firefox/" style="font-size: 20.00px;">Firefox</a><a href="/tags/Firefox OS/" style="font-size: 20.00px;">Firefox OS</a><a href="/tags/Gaia/" style="font-size: 20.00px;">Gaia</a><a href="/tags/Javascript/" style="font-size: 10.00px;">Javascript</a><a href="/tags/Make/" style="font-size: 10.00px;">Make</a><a href="/tags/MinGW/" style="font-size: 10.00px;">MinGW</a><a href="/tags/Nightly/" style="font-size: 10.00px;">Nightly</a><a href="/tags/bugzilla/" style="font-size: 10.00px;">bugzilla</a><a href="/tags/css/" style="font-size: 10.00px;">css</a><a href="/tags/css3/" style="font-size: 10.00px;">css3</a><a href="/tags/g0v/" style="font-size: 10.00px;">g0v</a><a href="/tags/hackath8n/" style="font-size: 10.00px;">hackath8n</a><a href="/tags/sublime text/" style="font-size: 10.00px;">sublime text</a><a href="/tags/trello/" style="font-size: 10.00px;">trello</a>
   </div>
 </div>
 
@@ -670,6 +678,10 @@ arr.forEach(<span class="function"><span class="keyword">function</span><span cl
 <div class="widget tag">
   <h3 class="title">最新文章</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/2014/06/06/Set-default-syntax-for-different-file-types/">Set default syntax for different file types in sublime text</a>
+      </li>
     
       <li>
         <a href="/2014/05/23/bugzilla-requests-to-trello/">Bugzilla requests to trello</a>
@@ -685,10 +697,6 @@ arr.forEach(<span class="function"><span class="keyword">function</span><span cl
     
       <li>
         <a href="/2014/01/19/firefox-addon---no-more-facebook-redirect/">Firefox Addon - No more Facebook redirect</a>
-      </li>
-    
-      <li>
-        <a href="/2014/01/02/gaia-build-system/">Gaia Build System</a>
       </li>
     
   </ul>
